@@ -2,12 +2,12 @@ import {
   BrowserRouter as Router,
   Route,
   Routes
-} from "react-router-dom";
-import { Header } from "./components/Header";
-import { HomePage }  from "./pages/Home";
-import { GamePage } from "./pages/Game";
-import { OrderPage } from "./pages/Order";
+} from 'react-router-dom';
 
+import { Header } from './components';
+import { HomePage }  from './pages/Home';
+import { GamePage } from './pages/Game';
+import { OrderPage } from './pages/Order';
 
 import './App.css';
 

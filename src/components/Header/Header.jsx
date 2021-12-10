@@ -1,8 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import cn from 'classnames';
 
-import style from "./Header.modul.css";
+import style from './Header.module.css';
+import CartBlock from '../CartBlock/CartBlock';
 
 
 const Header = () => {
@@ -14,7 +15,7 @@ const Header = () => {
         </Link>
       </div>
       <div className={cn( style.wrapper, style.headerCartBtnWrapper)}>
-      
+        <CartBlock/>
       </div>
     </div>
   );
