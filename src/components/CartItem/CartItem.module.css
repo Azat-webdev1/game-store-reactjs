@@ -1,0 +1,24 @@
+.cartItem {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cartItemImg {
+  max-width: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.cartItemPrice {
+  display: flex;
+  align-items: center;
+}
+
+.cartiItemDelete {
+  margin-left: 5px;
+  cursor: pointer;
+}

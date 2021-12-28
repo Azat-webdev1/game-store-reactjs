@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import cn from 'classnames';
 
-import style from './Header.module.css';
 import CartBlock from '../CartBlock/CartBlock';
+
+import style from './Header.module.css';
 
 
 const Header = () => {

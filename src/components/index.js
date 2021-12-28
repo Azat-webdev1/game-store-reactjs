@@ -3,3 +3,6 @@ export { default as GameItem } from './GameItem/GameItem';
 export { default as CartBlock } from './CartBlock/CartBlock';
 export { default as Button } from './Button/Button';
 export { default as GameBuy } from './GameBuy/GameBuy';
+export { default as CartMenu } from './CartMenu/CartMenu';
+export { default as GameGenre } from './GameGenre/GameGenre';
+export { default as CartItem } from './CartItem/CartItem';

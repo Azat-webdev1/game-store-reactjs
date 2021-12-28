@@ -23,9 +23,11 @@ const HomePage = () => {
           <GameItem
             key={game.id}
             game={game}
+            title={game.title}
+            genres={game.genres}
             {...game}
           />
-          )
+        )
       }
     </div>
   );
