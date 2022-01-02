@@ -13,6 +13,11 @@
 .cartIcon {
   cursor: pointer;
   position: relative;
+  transition: all .6 ease-in-out;
+}
+
+.cartIcon:hover {
+  opacity: .8;
 }
 
 .itemsInCart {

@@ -1,0 +1,18 @@
+.gamePageContent {
+  display: flex;
+}
+
+.gamePageLeft {
+  width: 70%;
+}
+
+.gamePageRight {
+  width: 30%;
+}
+
+.gamePageBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+

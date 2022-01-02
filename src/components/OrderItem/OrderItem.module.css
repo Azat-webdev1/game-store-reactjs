@@ -1,0 +1,21 @@
+.orderItem {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.orderCover {
+  width: 250px;
+  margin-right: 30px;
+}
+
+.orderTitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.orderPrice {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: auto;
+}
+

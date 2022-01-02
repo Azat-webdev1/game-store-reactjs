@@ -20,15 +20,6 @@
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6);
 }
 
-.gameImg {
-  height: 170px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
 .gameItemTitle {
   font-size: 18px;
   font-weight: bold;

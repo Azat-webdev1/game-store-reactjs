@@ -1,18 +1,15 @@
 .cartItem {
   width: 100%;
-  padding: 10px 0;
+  padding: 5px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-.cartItemImg {
-  max-width: 100%;
-  object-fit: cover;
-  margin-bottom: 15px;
-  border-radius: 15px;
-}
 
+.cartItemTitle {
+  margin-top: 15px;
+}
 .cartItemPrice {
   display: flex;
   align-items: center;

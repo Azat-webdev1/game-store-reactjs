@@ -1,6 +1,7 @@
-import React, { useState }  from 'react';
+import React, { useState, useCallback }  from 'react';
 import { useSelector } from 'react-redux';
 import { BiCartAlt } from 'react-icons/bi';
+import { useNavigate } from 'react-router-dom';
 
 import { calcTotalPrice } from '../utils';
 import { CartMenu } from '../../components';
@@ -12,7 +13,13 @@ const CartBlock = () => {
   const [isCartMenuVisible, setIsCartMenuVisible] = useState(false);
   const items = useSelector(state => state.cart.itemsInCart);
   const totalPrice = calcTotalPrice(items);
-
+  const navigate = useNavigate();
+  
+  const handleGoToOrderClick = useCallback(() => {
+    setIsCartMenuVisible(false);
+    navigate('/order');
+  }, [navigate]);
+  
   return (
     <div className={style.cartBlock}>
       {
@@ -31,7 +38,7 @@ const CartBlock = () => {
       {totalPrice > 0 ? (
         <span className={style.totalPrice}>{totalPrice} руб.</span>
       ) : null}
-      {isCartMenuVisible && <CartMenu />}
+      {isCartMenuVisible && <CartMenu onClick={handleGoToOrderClick}/>}
     </div>
   );
 };
