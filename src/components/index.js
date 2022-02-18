@@ -10,3 +10,4 @@ export { default as OrderItem } from './OrderItem/OrderItem';
 export { default as GameCover } from './GameCover/GameCover';
 export { default as InputItem } from './InputItem/InputItem';
 export { default as SelectItem } from './SelectItem/SelectItem';
+export { default as PaginationGames} from './PaginationGames/PaginationGames';

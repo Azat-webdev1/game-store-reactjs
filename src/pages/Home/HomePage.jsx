@@ -4,6 +4,7 @@ import axios from 'axios';
 import {
   GameItem,
   InputItem,
+  PaginationGames,
   SelectItem
 } from '../../components';
 
@@ -14,20 +15,21 @@ const HomePage = () => {
   const [gameLists, setGameLists] = useState([]);
   const [searchValue, setSearchValue] = useState('');
   const [directionSort, setdirectionSort] = useState(true);
-  
+  const [currentPageGame, setCurrentPageGame] = useState(1);
+
   useEffect(() => {
     const fetchGameLists = async () => {
       const res = await axios.get(`http://localhost:3004/gameLists`, {
         params: {
           _limit: 6,
-          _page: 1
+          _page: currentPageGame,
         }
       });
       setGameLists(res.data);
       
     };
     fetchGameLists();
-  }, []);
+  }, [currentPageGame]);
   
   const onChangeSearchInput = (e) => {
     setSearchValue(e.target.value);
@@ -47,6 +49,10 @@ const HomePage = () => {
     }
     setGameLists(copySort);
     setdirectionSort(!directionSort);
+  };
+
+  const handlerChange = (page) => { 
+    setCurrentPageGame(page);
   };
 
   return (
@@ -77,6 +83,9 @@ const HomePage = () => {
           )
         }
       </div>
+      <PaginationGames
+        onChangePage={(e) => {handlerChange(e.target.textContent)}}
+      />
     </>
   );
 };
