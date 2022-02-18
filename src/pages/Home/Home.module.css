@@ -1,4 +1,44 @@
+.filterSort {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
 .home {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.pagination {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .home {
+    justify-content: space-around;
+  }
+  .filterSort {
+    margin: 0 68px 0 68px;
+  }
+}
+@media (max-width: 768px) {
+  .filterSort {
+    margin: 0;
+  }
+  .home {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 576px) {
+  .filterSort {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  .home {
+    justify-content: center;
+  }
 }
