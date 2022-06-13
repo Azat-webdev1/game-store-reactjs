@@ -5,9 +5,9 @@ import {
 } from 'react-router-dom';
 
 import { Header } from './components';
-import { HomePage }  from './pages/Home';
-import { GamePage } from './pages/Game';
-import { OrderPage } from './pages/Order';
+import { HomePage }  from './pages/home';
+import { GamePage } from './pages/game';
+import { OrderPage } from './pages/order';
 
 import './App.css';
 
@@ -19,9 +19,18 @@ function App() {
         <div className="App">
           <Header/>
           <Routes>
-            <Route path="/order" element={<OrderPage /> }/>
-            <Route path="/app/:title" element={ <GamePage /> }/>
-            <Route path="/" element={<HomePage />} />
+            <Route
+              path="/order"
+              element={<OrderPage />}
+            />
+            <Route
+              path="/app/:title"
+              element={<GamePage />}
+            />
+            <Route
+              path="/"
+              element={<HomePage />}
+              />
           </Routes>
         </div>
       </Router>

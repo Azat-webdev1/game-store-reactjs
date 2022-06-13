@@ -3,20 +3,19 @@ import Pagination  from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 
 
-const PaginationGames = ({onChangePage}) => {
-  
+const PaginationGames = ({onChangePage, currentPage}) => {
   return (
     <>
     <Stack spacing={2}>
       <Pagination
-        onChange={onChangePage}
+        onChange={(e) => onChangePage(e.target.textContent)}
+        page={currentPage}
         count={3}
         defaultPage={1}
         color='primary'
         variant="outlined"
           sx={{
-          marginBottom: 5,
-          
+          margin: '20px 0 30px 0',
           '@media (max-width: 992px)': {
             marginLeft: '68px'
           },

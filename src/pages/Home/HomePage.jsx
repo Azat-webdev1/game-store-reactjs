@@ -1,5 +1,8 @@
-import React, {useState, useEffect} from 'react';
-import axios from 'axios';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchGameLists } from '../../store/games/gamesAsyncActions';
+import { setCurrentGame, setCurrentPage } from '../../store/games/gamesReducer';
 
 import {
   GameItem,
@@ -12,31 +15,32 @@ import style from './Home.module.css';
 
 
 const HomePage = () => {
-  const [gameLists, setGameLists] = useState([]);
+  const dispatch = useDispatch();
+  const games = useSelector(state => state.games.currentGame);
+  const status = useSelector(state => state.games.status);
+  const currentPage = useSelector(state => state.games.currentPage);
+
   const [searchValue, setSearchValue] = useState('');
   const [directionSort, setdirectionSort] = useState(true);
-  const [currentPageGame, setCurrentPageGame] = useState(1);
+
+  const getGames = async () => {
+    dispatch(
+      fetchGameLists({
+        currentPage: currentPage,
+      })
+    );
+  };
 
   useEffect(() => {
-    const fetchGameLists = async () => {
-      const res = await axios.get(`http://localhost:3004/gameLists`, {
-        params: {
-          _limit: 6,
-          _page: currentPageGame,
-        }
-      });
-      setGameLists(res.data);
-      
-    };
-    fetchGameLists();
-  }, [currentPageGame]);
-  
+    getGames();
+  }, [currentPage]);
+
   const onChangeSearchInput = (e) => {
     setSearchValue(e.target.value);
   };
   
   const sortGames = (field) => { 
-    const copy = gameLists.concat();
+    const copy = games.concat();
     let copySort;
     if (directionSort) {
       copySort = copy.sort(
@@ -47,13 +51,25 @@ const HomePage = () => {
         (a, b) => { return a[field] < b[field] ? 1 : -1 }
       );
     }
-    setGameLists(copySort);
+    dispatch(setCurrentGame(copySort));
     setdirectionSort(!directionSort);
   };
-
-  const handlerChange = (page) => { 
-    setCurrentPageGame(page);
+  
+  const handlerChange = (page) => {
+    dispatch(setCurrentPage(page));
   };
+
+  const gamesLists = games.filter((item) => item.title.toLowerCase()
+      .includes(searchValue.toLowerCase()))
+    .map((game) =>
+      <GameItem
+        key={game.id}
+        game={game}
+        title={game.title}
+        genres={game.genres}
+        {...game} 
+      />);
+  const skeletons = 'Пусто';
 
   return (
     <>
@@ -68,23 +84,19 @@ const HomePage = () => {
         />
       </div>
       <div className={style.home}>
-        {
-          gameLists
-            .filter((item) => item.title.toLowerCase()
-            .includes(searchValue.toLowerCase()))
-            .map((game) =>
-            <GameItem
-              key={game.id}
-              game={game}
-              title={game.title}
-              genres={game.genres}
-              {...game}
-            />
-          )
+        {status === 'error' ? (
+          <div className="error-info">
+            <h2>Произошла ошибка 😕</h2>
+            <p>К сожалению, не удалось получить игры.
+              Попробуйте повторить попытку позже.
+            </p>
+          </div>
+          ) : ( status === 'loading' ? skeletons : gamesLists )
         }
       </div>
       <PaginationGames
-        onChangePage={(e) => {handlerChange(e.target.textContent)}}
+        currentPage={currentPage}
+        onChangePage={handlerChange}
       />
     </>
   );
