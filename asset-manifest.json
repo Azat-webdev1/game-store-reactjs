@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Azat-webdev1/game-store-reactjs/static/css/main.fea15b30.css",
+    "main.js": "/Azat-webdev1/game-store-reactjs/static/js/main.6af37a7e.js",
+    "index.html": "/Azat-webdev1/game-store-reactjs/index.html",
+    "main.fea15b30.css.map": "/Azat-webdev1/game-store-reactjs/static/css/main.fea15b30.css.map",
+    "main.6af37a7e.js.map": "/Azat-webdev1/game-store-reactjs/static/js/main.6af37a7e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fea15b30.css",
+    "static/js/main.6af37a7e.js"
+  ]
+}
