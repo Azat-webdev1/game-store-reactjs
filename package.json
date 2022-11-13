@@ -2,7 +2,7 @@
   "name": "game-store-reactjs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Azat-webdev1/game-store-reactjs", 
+  "homepage": "https://azat-webdev1.github.io/game-store-reactjs/", 
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
