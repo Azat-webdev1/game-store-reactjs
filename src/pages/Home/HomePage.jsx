@@ -14,7 +14,6 @@ const HomePage = () => {
   const [gameLists, setGameLists] = useState([]);
   const [searchValue, setSearchValue] = useState('');
   const [directionSort, setdirectionSort] = useState(true);
-  ///////////////////////
   const [currentPageGame, setCurrentPageGame] = useState(1);
   
   useEffect(() => {
@@ -50,7 +49,7 @@ const HomePage = () => {
     setGameLists(copySort);
     setdirectionSort(!directionSort);
   };
-  ///////////////////
+
   const handlerChange = (page) => { 
     setCurrentPageGame(page);
   };
