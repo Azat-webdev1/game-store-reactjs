@@ -1,0 +1,25 @@
+.root li {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.root li a {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.root li a:hover {
+  background-color: #fff;
+  color: rgb(25, 26, 28);;
+}
+.root :global .selected a {
+  background-color: #fff;
+  color: rgb(25, 26, 28);;
+  outline: #fff;
+}

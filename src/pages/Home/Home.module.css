@@ -11,6 +11,10 @@
   margin-top: 25px;
 }
 
+.pagination {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 992px) {
   .home {
     justify-content: space-around;

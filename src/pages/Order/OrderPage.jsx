@@ -17,12 +17,12 @@ const OrderPage = () => {
   return (
     <div className={style.orderPage}>
       <div className={style.orderPageLeft}>
-        {items.map(game => <OrderItem game={game} />)}
+        {items.map(game => <OrderItem game={game} key={game.id} />)}
       </div>
       <div className={style.orderPageRight}>
         <div className="order-page__total-price">
           <span>{items.length}
-            {enumerate(items.length,  ['товар', 'товара', 'товаров'])}<br/>
+            {enumerate(items.length,  [' товар', ' товара', ' товаров'])}<br/>
             на сумму {calcTotalPrice(items)} руб.
           </span>
         </div>

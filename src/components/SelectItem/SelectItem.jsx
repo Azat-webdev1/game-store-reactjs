@@ -7,7 +7,7 @@ import Select from '@mui/material/Select';
 
 const SelectItem = ({sortGames}) => {
   const [label, setLabel] = React.useState('');
-  
+
   const handleChange = (e) => {
     setLabel(e.target.value);
   };
@@ -19,7 +19,7 @@ const SelectItem = ({sortGames}) => {
         sx={{
           minWidth: '200px',
           '@media (max-width: 576px)': {
-              minWidth: '320px',
+            minWidth: '320px',
           },
           '@media (max-width: 375px)': {
             minWidth: '295px',
@@ -33,7 +33,7 @@ const SelectItem = ({sortGames}) => {
           value={label}
           label="сортировка"
           onChange={handleChange}
-        
+
           sx={{
             backgroundColor: '#fff',
             borderRadius: 5,

@@ -5,9 +5,9 @@ import {
 } from 'react-router-dom';
 
 import { Header } from './components';
-import { HomePage }  from './pages/home';
-import { GamePage } from './pages/game';
-import { OrderPage } from './pages/order';
+import  HomePage  from './pages/home/HomePage';
+import GamePage  from './pages/game/GamePage';
+import  OrderPage  from './pages/order/OrderPage';
 
 import './App.css';
 
@@ -15,22 +15,13 @@ import './App.css';
 function App() {
   return (
     <>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
-          <Header/>
+          <Header />
           <Routes>
-            <Route
-              path="/order"
-              element={<OrderPage />}
-            />
-            <Route
-              path="/app/:title"
-              element={<GamePage />}
-            />
-            <Route
-              path="/"
-              element={<HomePage />}
-              />
+            <Route path="/order" element={<OrderPage /> }/>
+            <Route path="/app/:title" element={ <GamePage /> }/>
+            <Route path="/" element={<HomePage />} />
           </Routes>
         </div>
       </Router>

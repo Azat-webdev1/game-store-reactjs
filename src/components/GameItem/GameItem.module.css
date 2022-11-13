@@ -12,8 +12,8 @@
 
 .gameItem:not(:last-child) {
   margin-bottom: 45px;
-  
 }
+
 .gameItem:hover {
   transform: translateZ(500px);
   transform: translatey(-10px);
