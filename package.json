@@ -2,7 +2,6 @@
   "name": "game-store-reactjs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://azat-webdev1.github.io/game-store-reactjs/", 
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -29,8 +28,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server-json": "json-server ./src/assets/db.json --watch --port 3004"

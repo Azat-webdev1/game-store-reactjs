@@ -2,6 +2,7 @@ import React from 'react';
 
 import style from './GameCover.module.css';
 
+
 const GameCover = ({image = ''}) => {
   return (
     <div

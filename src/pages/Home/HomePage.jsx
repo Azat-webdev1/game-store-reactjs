@@ -25,7 +25,6 @@ const HomePage = () => {
         }
       });
       setGameLists(res.data);
-      
     };
     fetchGameLists();
   }, [currentPageGame]);
