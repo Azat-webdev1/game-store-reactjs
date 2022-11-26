@@ -5,9 +5,9 @@ import {
 } from 'react-router-dom';
 
 import { Header } from './components';
-import  HomePage  from './pages/home/HomePage';
-import GamePage  from './pages/game/GamePage';
-import  OrderPage  from './pages/order/OrderPage';
+import HomePage from './pages/home/HomePage';
+import GamePage from './pages/game/GamePage';
+import OrderPage from './pages/order/OrderPage';
 
 import './App.css';
 
@@ -15,7 +15,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <div className="App">
           <Header />
           <Routes>

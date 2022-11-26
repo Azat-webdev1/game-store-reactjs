@@ -2,7 +2,7 @@
   "gameLists": [
     { 
       "page": 1,
-      "image": "./img/forza_5.jpeg",
+      "image": "/img/forza_5.jpeg",
       "title": "Forza Horizon 5",
       "genres": [
         "Гонки",
@@ -16,7 +16,7 @@
     },
     {
       "page": 1,
-      "image": "./img/battlefield_2042.jpg",
+      "image": "/img/battlefield_2042.jpg",
       "title": "Battlefield 2042",
       "genres": [
         "Экшен",
@@ -30,7 +30,7 @@
     },
     {
       "page": 1,
-      "image": "./img/life_is_strange_true_colors.jpeg",
+      "image": "/img/life_is_strange_true_colors.jpeg",
       "title": "Life is Strange True Colors",
       "genres": [
         "Глубокий сюжет",
@@ -43,7 +43,7 @@
     },
     {
       "page": 1,
-      "image": "./img/gta_v.jpeg",
+      "image": "/img/gta_v.jpeg",
       "title": "Grand Theft Auto V",
       "genres": [
         "Открытый мир",
@@ -56,7 +56,7 @@
     },
     {
       "page": 1,
-      "image": "./img/rainbow_siege.jpeg",
+      "image": "/img/rainbow_siege.jpeg",
       "title": "Tom Clancy's Rainbow Six® Siege",
       "video": "https://www.youtube.com/embed/6wlvYh0h63k",
       "genres": [
@@ -69,7 +69,7 @@
     },
     {
       "page": 1,
-      "image": "./img/assassins_creed_valhalla.png",
+      "image": "/img/assassins_creed_valhalla.png",
       "title": "Assassin’s Creed Valhalla",
       "genres": [
         "Паркур",
@@ -83,7 +83,7 @@
     },
     {
       "page": 2,
-      "image": "./img/battlefield_2042.jpg",
+      "image": "/img/battlefield_2042.jpg",
       "title": "Battlefield 2042",
       "genres": [
         "Экшен",
@@ -97,7 +97,7 @@
     },
     {
       "page": 2,
-      "image": "./img/assassins_creed_valhalla.png",
+      "image": "/img/assassins_creed_valhalla.png",
       "title": "Assassin’s Creed Valhalla",
       "genres": [
         "Паркур",
@@ -111,7 +111,7 @@
     },
     {
       "page": 2,
-      "image": "./img/life_is_strange_true_colors.jpeg",
+      "image": "/img/life_is_strange_true_colors.jpeg",
       "title": "Life is Strange True Colors",
       "genres": [
         "Глубокий сюжет",
@@ -124,7 +124,7 @@
     },
     {
       "page": 2,
-      "image": "./img/rainbow_siege.jpeg",
+      "image": "/img/rainbow_siege.jpeg",
       "title": "Tom Clancy's Rainbow Six® Siege",
       "video": "https://www.youtube.com/embed/6wlvYh0h63k",
       "genres": [
@@ -137,7 +137,7 @@
     },
     {
       "page": 2,
-      "image": "./img/gta_v.jpeg",
+      "image": "/img/gta_v.jpeg",
       "title": "Grand Theft Auto V",
       "genres": [
         "Открытый мир",
@@ -150,7 +150,7 @@
     },
     {
       "page": 2,
-      "image": "./img/forza_5.jpeg",
+      "image": "/img/forza_5.jpeg",
       "title": "Forza Horizon 5",
       "genres": [
         "Гонки",
@@ -164,7 +164,7 @@
     },
     {
       "page": 3,
-      "image": "./img/life_is_strange_true_colors.jpeg",
+      "image": "/img/life_is_strange_true_colors.jpeg",
       "title": "Life is Strange True Colors",
       "genres": [
         "Глубокий сюжет",
@@ -177,7 +177,7 @@
     },
     {
       "page": 3,
-      "image": "./img/rainbow_siege.jpeg",
+      "image": "/img/rainbow_siege.jpeg",
       "title": "Tom Clancy's Rainbow Six® Siege",
       "video": "https://www.youtube.com/embed/6wlvYh0h63k",
       "genres": [
@@ -190,7 +190,7 @@
     },
     {
       "page": 3,
-      "image": "./img/assassins_creed_valhalla.png",
+      "image": "/img/assassins_creed_valhalla.png",
       "title": "Assassin’s Creed Valhalla",
       "genres": [
         "Паркур",
@@ -204,7 +204,7 @@
     },
     {
       "page": 3,
-      "image": "./img/forza_5.jpeg",
+      "image": "/img/forza_5.jpeg",
       "title": "Forza Horizon 5",
       "genres": [
         "Гонки",
@@ -218,7 +218,7 @@
     },
     {
       "page": 3,
-      "image": "./img/battlefield_2042.jpg",
+      "image": "/img/battlefield_2042.jpg",
       "title": "Battlefield 2042",
       "genres": [
         "Экшен",
@@ -232,7 +232,7 @@
     },
     {
       "page": 3,
-      "image": "./img/gta_v.jpeg",
+      "image": "/img/gta_v.jpeg",
       "title": "Grand Theft Auto V",
       "genres": [
         "Открытый мир",

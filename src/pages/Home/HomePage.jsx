@@ -18,7 +18,7 @@ const HomePage = () => {
   
   useEffect(() => {
     const fetchGameLists = async () => {
-      const res = await axios.get(`http://localhost:3004/gameLists`, {
+      const res = await axios.get(`${process.env.REACT_APP_BASE_URL}/gameLists`, {
         params: {
           _limit: 6,
           _page: currentPageGame,

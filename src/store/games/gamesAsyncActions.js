@@ -8,7 +8,7 @@ export const fetchGameLists = createAsyncThunk(
   'game/fetchGameListsStatus',
   async (params) => {
     const { currentPage } = params;
-    const { data } = await axios.get(`${process.env.PUBLIC_URL}/gameLists`, {
+    const { data } = await axios.get(`${process.env.REACT_APP_BASE_URL}/gameLists`, {
       params: pickBy(
         {
           page: currentPage,

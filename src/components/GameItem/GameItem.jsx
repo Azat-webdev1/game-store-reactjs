@@ -25,9 +25,11 @@ const GameItem = ({game, title}) => {
       <div className={style.gameItemDetails}>
       <span className={style.gameItemTitle}>{title}</span>
         <div className={style.gameItemGenre}>
-          {game.genres.map((genre, index) => (
-            <GameGenre genre={genre} key={genre} />
-          ))}
+          {game.genres.map(function (genre) {
+            return (
+              <GameGenre genre={genre} key={genre} />
+            );
+          })}
         </div>
         <div className={style.gameItemBuy}>
           <GameBuy
