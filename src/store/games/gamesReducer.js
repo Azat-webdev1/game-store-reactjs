@@ -19,7 +19,7 @@ const gamesSlice = createSlice({
   initialState,
   reducers: {
     setCurrentGame(state, action) {
-      state.games = action.payload
+      state.currentGame = action.payload
     },
     setCurrentPage(state, action) {
       state.currentPage = action.payload;

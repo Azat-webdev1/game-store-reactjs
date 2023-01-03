@@ -12,13 +12,13 @@ import style from './Home.module.css';
 
 const HomePage = () => {
   const [gameLists, setGameLists] = useState([]);
+  const [currentPageGame, setCurrentPageGame] = useState(1);
   const [searchValue, setSearchValue] = useState('');
   const [directionSort, setdirectionSort] = useState(true);
-  const [currentPageGame, setCurrentPageGame] = useState(1);
   
   useEffect(() => {
     const fetchGameLists = async () => {
-      const res = await axios.get(`${process.env.REACT_APP_BASE_URL}/gameLists`, {
+      const res = await axios.get(`${import.meta.env.VITE_APP_BASE_URL}/gameLists`, {
         params: {
           _limit: 6,
           _page: currentPageGame,
@@ -52,7 +52,7 @@ const HomePage = () => {
   const handlerChange = (page) => { 
     setCurrentPageGame(page);
   };
-
+  
   return (
     <>
       <div className={style.filterSort}>

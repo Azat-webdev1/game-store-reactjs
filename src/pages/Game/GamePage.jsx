@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSelector} from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import { GameBuy } from '../../components';
 import { GameCover } from '../../components';
@@ -23,7 +23,6 @@ const GamePage = () => {
             height="400px"
             src={game.video}
             title="YouTube video player"
-            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           ></iframe>
         </div>
