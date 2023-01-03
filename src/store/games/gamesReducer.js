@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { fetchGameLists } from './gamesAsyncActions';
+import { fetchGameLists } from './gamesAsyncActions.js';
 
 
 const Status = {

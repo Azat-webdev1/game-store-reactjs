@@ -5,9 +5,9 @@ import {
 } from 'react-router-dom';
 
 import { Header } from './components';
-import HomePage from './pages/home/HomePage';
-import GamePage from './pages/game/GamePage';
-import OrderPage from './pages/order/OrderPage';
+import HomePage from './pages/home/HomePage.jsx';
+import GamePage from './pages/game/GamePage.jsx';
+import OrderPage from './pages/order/OrderPage.jsx';
 
 import './App.css';
 
