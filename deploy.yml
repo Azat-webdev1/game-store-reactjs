@@ -11,7 +11,7 @@ pages:
   script:
     - npm install
     - npm run build
-    - node server.js
+    - npm run server-json
     - cp -a dist/. public/
   artifacts:
     paths:
